@@ -30,12 +30,12 @@ import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
-    Mugan86GoogleAnalyticsModule.forRoot(
-      {
-        analyticsId: 'G-XSJ2NSDR1N',
-        showLog: true
-      }
-    )
+    // Mugan86GoogleAnalyticsModule.forRoot(
+    //   {
+    //     analyticsId: 'G-XSJ2NSDR1N',
+    //     showLog: true
+    //   }
+    // )
     
     
   ],
