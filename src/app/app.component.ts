@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 declare function init_plugins();
+
+declare var gtag;
 
 @Component({
   selector: 'app-root',
@@ -9,6 +12,21 @@ declare function init_plugins();
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
+  constructor(
+    private router: Router
+  ) {
+    const navEndEvents$ = this.router.events
+    .pipe(
+      filter(event => event instanceof NavigationEnd)
+    );
+
+    navEndEvents$.subscribe((event: NavigationEnd) => {
+      gtag('config', 'G-XSJ2NSDR1N', {
+        'page_path': event.urlAfterRedirects
+      });
+    });
+  }
 
   selectedwallet = '1';
   customOptions: any = {
