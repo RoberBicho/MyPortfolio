@@ -29,6 +29,7 @@
         "compass-mixins-fixed": "^1.0.1",
         "compass-sass-mixins": "^0.12.7",
         "jquery": "^3.5.1",
+        "mugan86-ng-google-analytics": "^1.1.1",
         "ngx-owl-carousel": "^2.0.7",
         "ngx-owl-carousel-o": "^2.1.1",
         "node-sass": "^4.14.1",
