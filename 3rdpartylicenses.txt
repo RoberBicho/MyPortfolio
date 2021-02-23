@@ -61,9 +61,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-mugan86-ng-google-analytics
-MIT
-
 ngx-owl-carousel-o
 MIT
 
