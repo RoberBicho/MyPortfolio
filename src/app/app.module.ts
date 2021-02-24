@@ -11,7 +11,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MiHistoriaComponent } from './mi-historia/mi-historia.component';
-import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
+// import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
 
 
 
