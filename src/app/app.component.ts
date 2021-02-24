@@ -52,7 +52,17 @@ export class AppComponent implements OnInit {
   }
   
   ngOnInit() {
-    init_plugins();
+    // init_plugins();
+    this.router.events.forEach(item => {
+      if (item instanceof NavigationEnd) {
+        const gtmTag = {
+          event: 'page',
+          pageName: item.url
+        };
+
+        this.gtmService.pushTag(gtmTag);
+      }
+    });
   }
 
   cv() {
