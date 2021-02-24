@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+// import { filter } from 'rxjs/operators';
 import { GoogleTagManagerService } from 'angular-google-tag-manager';
-import { filter } from 'rxjs/operators';
 
 declare function init_plugins();
 
@@ -18,16 +18,16 @@ export class AppComponent implements OnInit {
     private router: Router,
     private  gtmService : GoogleTagManagerService
   ) {
-    const navEndEvents$ = this.router.events
-    .pipe(
-      filter(event => event instanceof NavigationEnd)
-    );
+    // const navEndEvents$ = this.router.events
+    // .pipe(
+    //   filter(event => event instanceof NavigationEnd)
+    // );
 
-    navEndEvents$.subscribe((event: NavigationEnd) => {
-      gtag('config', 'G-XSJ2NSDR1N', {
-        'page_path': event.urlAfterRedirects
-      });
-    });
+    // navEndEvents$.subscribe((event: NavigationEnd) => {
+    //   gtag('config', 'G-XSJ2NSDR1N', {
+    //     'page_path': event.urlAfterRedirects
+    //   });
+    // })
   }
 
   selectedwallet = '1';
