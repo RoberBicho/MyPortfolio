@@ -39,7 +39,9 @@ import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
     
     
   ],
-  providers: [],
+  providers: [
+    {provide: 'googleTagManagerId', useValue: 'GTM-N2ZJJFX'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

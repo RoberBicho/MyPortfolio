@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { filter } from 'rxjs/operators';
 
 declare function init_plugins();
@@ -14,7 +15,8 @@ declare var gtag;
 export class AppComponent implements OnInit {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private  gtmService : GoogleTagManagerService
   ) {
     const navEndEvents$ = this.router.events
     .pipe(
@@ -53,4 +55,12 @@ export class AppComponent implements OnInit {
     init_plugins();
   }
 
+  cv() {
+    const gtmTag = {
+      event: 'button-click',
+      data: 'my-custom-event',
+    };
+    this.gtmService.pushTag(gtmTag);
+    console.log('this is a custom event');
+  }
 }
