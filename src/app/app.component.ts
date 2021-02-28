@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { GoogleTagManagerService } from 'angular-google-tag-manager';
+import { AppService } from './app.service';
 
 declare function init_plugins();
 
@@ -14,7 +15,10 @@ declare var gtag;
 })
 export class AppComponent implements OnInit {
 
+  modal
+
   constructor(
+    public appService: AppService,
     private router: Router,
     private gtmService : GoogleTagManagerService
   ) {
@@ -63,6 +67,7 @@ export class AppComponent implements OnInit {
         this.gtmService.pushTag(gtmTag);
       }
     });
+
   }
 
   cv() {
@@ -72,4 +77,9 @@ export class AppComponent implements OnInit {
     };
     this.gtmService.pushTag(gtmTag);
   }
+
+  openModal() {
+    this.appService.modal = true
+  }
+
 }

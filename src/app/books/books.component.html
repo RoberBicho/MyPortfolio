@@ -1,0 +1,115 @@
+<div class="modal fondo-negro animated fadeIn" style="display: block;" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button (click)="closeModal()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+                <mat-tab-group>
+                    <mat-tab label="Personal">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" id="list-story-list" data-toggle="list" href="#list-story" role="tab" aria-controls="story">Story Coaching</a>
+                                    <a class="list-group-item list-group-item-action" id="list-jugar-list" data-toggle="list" href="#list-jugar" role="tab" aria-controls="jugar">Jugar con el corazón</a>
+                                    <a class="list-group-item list-group-item-action" id="list-busca-list" data-toggle="list" href="#list-busca" role="tab">Busca en tu interior</a>
+                                    <a class="list-group-item list-group-item-action" id="list-alquimista-list" data-toggle="list" href="#list-alquimista" role="tab">El alquimista</a>
+                                    <a class="list-group-item list-group-item-action" id="list-caos-list" data-toggle="list" href="#list-caos" role="tab" aria-controls="caos">Ama tu caos</a>
+                                    <a class="list-group-item list-group-item-action" id="list-motiva-list" data-toggle="list" href="#list-motiva" role="tab" aria-controls="motiva">La sorprendente verdad sobre lo que nos motiva</a>
+                                    <a class="list-group-item list-group-item-action" id="list-coaching-list" data-toggle="list" href="#list-coaching" role="tab" aria-controls="coaching">Coaching para dummies</a>
+                                    <a class="list-group-item list-group-item-action" id="list-pnl-list" data-toggle="list" href="#list-pnl" role="tab" aria-controls="pnl">PNL para dummies</a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="list-story" role="tabpanel" aria-labelledby="list-story-list">Una maravilla del crecimiento personal. Te ayuda a reflexionar a través de las historias, la mejor herramienta para sumergirte de lleno en dichas reflexiones. Autor: Fernando Sánchez Salinero</div>
+                                    <div class="tab-pane fade" id="list-jugar" role="tabpanel" aria-labelledby="list-jugar-list">La experiencia de un entrenador de un gran equipo de balonmano como el FC Barcelona que cuenta como llegaron a ser campeones de europa gracias a la motivación individual y grupas atravesando multitud de problemas. Autor:
+                                        Xesco Spar
+                                    </div>
+                                    <div class="tab-pane fade" id="list-busca" role="tabpanel" aria-labelledby="list-busca-list">Enseñanzas y experiencias de unas las personas mas importantes en los últimos tiempos. Un must en la introducción a la atención plena. Autor: Chade-Meng Tan
+                                    </div>
+                                    <div class="tab-pane fade" id="list-alquimista" role="tabpanel" aria-labelledby="list-alquimista-list">Poco que decir sobre este número uno. Autor: Paulo Coelho</div>
+                                    <div class="tab-pane fade" id="list-caos" role="tabpanel" aria-labelledby="list-caos-list">Sin duda un libro que nadie debería dejar de leer. Una historia conmovedora y llena de sentimientos. Autor: Albert Espinosa
+                                    </div>
+                                    <div class="tab-pane fade" id="list-motiva" role="tabpanel" aria-labelledby="list-motiva-list">Lejos de lo que por norma general creemos que nos motiva, este libro nos ayuda a profundizar en aspectos sobre la motivación individual. Autor: Daniel H. Pink
+                                    </div>
+                                    <div class="tab-pane fade" id="list-coaching" role="tabpanel" aria-labelledby="list-coaching-list">Si quieres conocer el cocaching y como aplicarlo a nivel "usuario", este es el libro.</div>
+                                    <div class="tab-pane fade" id="list-pnl" role="tabpanel" aria-labelledby="list-pnl-list">Si quieres conocer la PNL y como aplicarla a nivel "usuario", este es el libro.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Negocio">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" id="list-lean-list" data-toggle="list" href="#list-lean" role="tab" aria-controls="lean">Lean Startup</a>
+                                    <a class="list-group-item list-group-item-action" id="list-emprendedor-list" data-toggle="list" href="#list-emprendedor" role="tab" aria-controls="emprendedor">El manual del emprendedor</a>
+                                    <a class="list-group-item list-group-item-action" id="list-generacion-list" data-toggle="list" href="#list-generacion" role="tab" aria-controls="generacion">Generación de modelos de negocio</a>
+                                    <a class="list-group-item list-group-item-action" id="list-mg3-list" data-toggle="list" href="#list-mg3" role="tab" aria-controls="mg3">Management 3.0</a>
+                                    <a class="list-group-item list-group-item-action" id="list-spin-list" data-toggle="list" href="#list-spin" role="tab" aria-controls="spin">Spin Selling</a>
+                                    <a class="list-group-item list-group-item-action" id="list-presentar-list" data-toggle="list" href="#list-presentar" role="tab" aria-controls="presentar">El arte de presentar</a>
+                                    <a class="list-group-item list-group-item-action" id="list-managing-list" data-toggle="list" href="#list-managing" role="tab" aria-controls="managing">Managing for Happiness</a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="list-lean" role="tabpanel" aria-labelledby="list-lean-list">La nueva metodología de trabajo basada en la experimentación científica para conseguir un crecimiento sostenible.
+                                    </div>
+                                    <div class="tab-pane fade" id="list-emprendedor" role="tabpanel" aria-labelledby="list-emprendedor-list">Tips y experencias para una visión de creación.</div>
+                                    <div class="tab-pane fade" id="list-generacion" role="tabpanel" aria-labelledby="list-generacion-list">Para desarrollar una idea de negocio es importante tener en cuenta muchos aspectos como encaje product/mercado etc. Este es el libro que te ayudará a poner en orden tus ideas de negocio.
+                                    </div>
+                                    <div class="tab-pane fade" id="list-mg3" role="tabpanel" aria-labelledby="list-mg3-list">Las organizaciones están compuestas por muchos individuos que tienen que trabajar en equipo. Que las personas estén contenta es la clave para una organización fuerte y feliz. Y sí, estoy convencido que es alcanzable.
+                                    </div>
+                                    <div class="tab-pane fade" id="list-spin" role="tabpanel" aria-labelledby="list-spin-list">El manual imprecindible para desarrollar una venta.</div>
+                                    <div class="tab-pane fade" id="list-presentar" role="tabpanel" aria-labelledby="list-presentar-list">Tips y ejemplos de como comunicar tus ideas sin aburrir y llegando a la personas.</div>
+                                    <div class="tab-pane fade" id="list-managing" role="tabpanel" aria-labelledby="list-managing-list">Otro ejemplo más del management 3.0</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </mat-tab>
+                    <mat-tab label="Agile">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" id="list-succeeding-list" data-toggle="list" href="#list-succeeding" role="tab" aria-controls="succeeding">Suceeding with agile</a>
+                                    <a class="list-group-item list-group-item-action" id="list-scrum-list" data-toggle="list" href="#list-scrum" role="tab" aria-controls="scrum">The scrum guide</a>
+                                    <a class="list-group-item list-group-item-action" id="list-smastery-list" data-toggle="list" href="#list-smastery" role="tab" aria-controls="smastery">Scrum mastery</a>
+                                    <a class="list-group-item list-group-item-action" id="list-isla-list" data-toggle="list" href="#list-isla" role="tab" aria-controls="isla">La isla</a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="list-succeeding" role="tabpanel" aria-labelledby="list-succeeding-list">Las bases fundamentales más allá de la guía SCRUM.</div>
+                                    <div class="tab-pane fade" id="list-scrum" role="tabpanel" aria-labelledby="list-scrum-list">Manual oficial del framework SCRUM</div>
+                                    <div class="tab-pane fade" id="list-smastery" role="tabpanel" aria-labelledby="list-smastery-list">...</div>
+                                    <div class="tab-pane fade" id="list-isla" role="tabpanel" aria-labelledby="list-isla-list">Ejemplo práctico de como ser ágil partiendo de cero.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Programación">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" id="list-xp-list" data-toggle="list" href="#list-xp" role="tab" aria-controls="succeeding">Scrum and extreme programming</a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="list-xp" role="tabpanel" aria-labelledby="list-xp-list">Lectura recomendada para mayor conocimiento sobre metodologías ágiles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <br>
+                </mat-tab-group>
+
+            </div>
+
+        </div>
+    </div>
+</div>

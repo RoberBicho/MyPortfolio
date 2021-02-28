@@ -11,6 +11,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MiHistoriaComponent } from './mi-historia/mi-historia.component';
+import { BooksComponent } from './books/books.component';
+import {MatTabsModule} from '@angular/material/tabs';
 // import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
 
 
@@ -23,13 +25,15 @@ import { MiHistoriaComponent } from './mi-historia/mi-historia.component';
     BlogComponent,
     TimelineComponent,
     BreadcrumbComponent,
-    MiHistoriaComponent
+    MiHistoriaComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    MatTabsModule
     // Mugan86GoogleAnalyticsModule.forRoot(
     //   {
     //     analyticsId: 'G-XSJ2NSDR1N',
