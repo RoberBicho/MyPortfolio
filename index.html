@@ -45,7 +45,23 @@
 
     <base href="/MyPortfolio/">    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <script>
+        (function() {
+            var qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm_share",
+                b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+                js = ce.call(d, "script");
+                js.id = id;
+                js.src = b + "embed.js";
+                q = gt.call(d, "script")[0];
+                q.parentNode.insertBefore(js, q)
+            }
+        })()
+    </script>
 
 <link rel="stylesheet" href="styles.b37f7b10e55b44ee9bcf.css"></head>
 
@@ -72,6 +88,6 @@
 
 
 
-<script src="runtime-es2015.cdfb0ddb511f65fdc0a0.js" type="module"></script><script src="runtime-es5.cdfb0ddb511f65fdc0a0.js" nomodule defer></script><script src="polyfills-es5.44547b4d4a23c72d0f9c.js" nomodule defer></script><script src="polyfills-es2015.ffa9bb4e015925544f91.js" type="module"></script><script src="scripts.2337d1bd2ab6791bdbcb.js" defer></script><script src="main-es2015.44757227f50609f4195e.js" type="module"></script><script src="main-es5.44757227f50609f4195e.js" nomodule defer></script></body>
+<script src="runtime-es2015.cdfb0ddb511f65fdc0a0.js" type="module"></script><script src="runtime-es5.cdfb0ddb511f65fdc0a0.js" nomodule defer></script><script src="polyfills-es5.44547b4d4a23c72d0f9c.js" nomodule defer></script><script src="polyfills-es2015.ffa9bb4e015925544f91.js" type="module"></script><script src="scripts.2337d1bd2ab6791bdbcb.js" defer></script><script src="main-es2015.b7c37d7522ad0fe1da2b.js" type="module"></script><script src="main-es5.b7c37d7522ad0fe1da2b.js" nomodule defer></script></body>
 
 </html>
